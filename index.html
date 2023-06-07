@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seletores personalizados</title>
+    <style>
+        h1{
+            background-color: var(--cor-principal);
+        }
+        .centralizado {
+            text-align: center;
+        }
+        p.centralizado{
+            background-color: black;
+            color: white;
+        }
+
+        .sublinhado {
+            text-decoration: underline;
+            font-style: italic;
+            background-color: green;
+        }
+        #importante{
+            background-color: aqua;
+            color: black;
+        }
+         p > strong{
+            background-color: yellow;
+            color: aquamarine;
+        }
+        h1+p+p{
+            font-family: var(arial);
+        }
+        p.surpresa{
+            display: none;
+        }
+        div.surpresa:hover > p.surpresa{
+            display: block  ;
+            background-color: aqua;
+        }
+        p::first-letter{
+            font-size: 32px;
+            border: 1px solid;
+        }
+        ::selection{
+            background-color: black;
+            color: white;
+        }
+        :root{
+            --cor-principal: blue;
+            --fonte-principal: arial;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 id="importante" class="centralizado sublinhado">Título principal</h1>
+    <p class="centralizado">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum pariatur cumque, quia nostrum aut tempore
+        excepturi beatae unde iste eligendi? Ullam deserunt nobis enim sit delectus quos magnam, doloribus dolorem!</p>
+    <p class="sublinhado">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea rerum saepe doloribus quis facere similique impedit
+        itaque tempora? Quasi ipsa non deleniti laboriosam tempore unde ad maiores asperiores praesentium nemo!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis, id blanditiis, amet molestias sunt repellat
+        autem ipsum quam beatae alias ratione consectetur, ipsa praesentium eveniet rem. Quidem, repellendus suscipit.
+    </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime tempore, reiciendis doloribus sunt atque
+        praesentium officia et, consectetur iure tenetur rem perferendis sequi sapiente molestias? Quia in aspernatur
+        ipsum minus.</p>
+
+    <h1 id="importante"><strong>secundário</strong></h1>
+    <p><strong>Lorem</strong> ipsum dolor sit amet consectetur adipisicing elit. Eaque eveniet quis sapiente doloremque necessitatibus
+        aspernatur dicta, qui modi fugiat, pariatur labore velit dolorem voluptatibus esse perspiciatis ducimus laborum
+        sint id!</p>
+    <p><strong>Lorem</strong> ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur rerum blanditiis totam minima sapiente dignissimos quam accusantium ex. Ipsam reprehenderit ipsum eius non velit cupiditate! Recusandae similique quis sit sunt. dolor sit amet consectetur adipisicing elit. Autem deleniti quidem illo, exercitationem quas tenetur
+        perspiciatis asperiores sit unde delectus harum quasi corrupti eaque, doloremque omnis modi incidunt. Ratione,
+        qui.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda voluptate modi quisquam nostrum
+        tempore vero officiis doloribus ab deserunt eius libero, nam necessitatibus quos, ducimus iure error
+        voluptatibus dolores.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum dolorem in corrupti quaerat ipsum. Hic maxime
+        omnis, impedit ipsam eos quidem exercitationem, consectetur soluta corporis, ipsum esse delectus enim quod?</p>
+
+
+        <div class="surpresa">
+            <p>PASSE O MOUSE AQUI</p>
+            <p class="surpresa">SURPRISE!!!!!</p>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, et blanditiis dolorum hic placeat omnis. A, quo corporis tenetur quia fugit nemo saepe praesentium adipisci fugiat, doloremque incidunt. Temporibus, odit?</p>
+
+        
+
+
+</body>
+
+</html>
