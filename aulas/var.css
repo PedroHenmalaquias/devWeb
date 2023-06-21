@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
+:root{
+    --cor-fundo-principal: blue;
+    --cor-texto-principal: red;
+    --fonte-principal: 'Orbit', sans-serif;
+}
+body{
+    background-color: var(--cor-fundo-principal);
+    color: var(--cor-texto-principal);
+    font-family: var(--fonte-principal);
+}
