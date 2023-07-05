@@ -1,25 +1,25 @@
-@charset "UTF-8";
-#cabecalho{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-    border: solid 1px black;
-    grid-template-rows: 1fr 1fr;
+@charset "utf-8";
+
+div, section,aside{
     min-height: 100px;
+    border: 1px solid black;
 }
-#navegacao{
-    grid-row: 2;
-    grid-column: 1 / span 5;
-    border: solid 1px black;
-    
+header{
+    display: grid;
+    grid-template-columns: 12;
 }
-header > h1{
-    text-align: center;
-    grid-column: 3;
-}
-button{
-margin: auto;
-}
-#div1-nav{
+#menu{
     grid-column: 1;
-    grid-row: 2;
+}
+#titulo{
+    grid-column: 2 / span 9;
+}
+main{
+    display: grid;
+    grid-template-rows: 2;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#noticiaPrincipal{
+    margin: auto;
 }
