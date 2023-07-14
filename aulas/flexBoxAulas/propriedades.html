@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>propriedaes</title>
+    <style>
+        .container{
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid black;
+            height: 400px;
+           /*height: 600px;*/
+           /*flex-direction: row*/
+           /*flex-direction: column-reverse;*/
+           /*flex-direction: row-reverse;*/
+           /*flex-direction: column;*/
+           /*flex-wrap: wrap-reverse;*/
+           /*flex-flow: column ;*/
+           /*justify-content: flex-start;*/
+           /*justify-content: flex-end;*/
+           /*justify-content: center;*/
+           /*justify-content: space-between;*/
+           /*justify-content: space-around;*/
+           justify-content: center; /* eixo principal*/
+           /*align-items: baseline ; /*eixo secundário*/
+           /*align-items: flex-end;*/
+           /*align-items: flex-start;*/
+           align-items: center;
+        }
+        .flexivel{
+             display: flex;
+        }
+        .horizontal{
+            flex-direction: row;
+        }
+        .vertical{
+            flex-direction: column;
+        }
+        .quebra{
+            flex-wrap: wrap;
+        }
+        .fluxo-horizontal-quebra{
+            /*flex-direction: row;
+            flex-wrap: wrap;*/
+            flex-flow: row wrap;
+        }
+        .item{
+            margin: 5px;
+            height: 30px;
+            padding: 5px;
+            background: #447;
+            text-align: center;
+            font-size: 1em;
+            color: #fff;
+            width: calc(33,3333% - 20px);
+        }
+        body{
+            font-family: arial;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="container flexivel horizontal quebra">
+            <div class="item">CFB Cursos 1</div>
+            <div class="item">CFB Cursos 2</div>
+            <div class="item">CFB Cursos 3</div>
+            <div class="item">CFB Cursos 4</div>
+            <div class="item">CFB Cursos 5</div>
+            <div class="item">CFB Cursos 5</div>
+            <div class="item">CFB Cursos 5</div>
+            <div class="item">CFB Cursos 5</div>
+            
+        </div>
+   
+    
+</body>
+</html>
