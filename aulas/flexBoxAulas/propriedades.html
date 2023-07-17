@@ -10,6 +10,7 @@
             margin: 0 auto;
             border: 1px solid black;
             height: 400px;
+            /*height: 400px;*/
            /*height: 600px;*/
            /*flex-direction: row*/
            /*flex-direction: column-reverse;*/
@@ -26,7 +27,9 @@
            /*align-items: baseline ; /*eixo secundário*/
            /*align-items: flex-end;*/
            /*align-items: flex-start;*/
-           align-items: center;
+           align-content: space-between;
+           /*align-content: center; /*eixo secundário*/
+           /*align-content não coloca um espaço igual entre os item, diferente de align-items*/
         }
         .flexivel{
              display: flex;
@@ -47,13 +50,39 @@
         }
         .item{
             margin: 5px;
-            height: 30px;
             padding: 5px;
             background: #447;
             text-align: center;
             font-size: 1em;
             color: #fff;
-            width: calc(33,3333% - 20px);
+            /*flex-grow: ; o elemento é redimensionado de acordo com o container*/
+            /*flex-basis: ; coloca um tamanho base, independente do conteúdo*/
+        }
+        .tam0{
+            flex-grow: 0;
+        }
+        .tam1{
+            flex-grow: 1;
+        }
+        .tam2{
+            flex-grow: 2;
+        }
+        .tam3{flex-grow: 3;
+        }
+        .basea{
+            flex-basis: auto;
+        }
+        .base0{
+            flex-basis: 0;
+        }
+        .base1{
+            flex-basis: 1;
+        }
+        .base2{
+            flex-basis: 2;
+        }
+        .base3{
+            flex-basis: 3;
         }
         body{
             font-family: arial;
@@ -64,14 +93,10 @@
 <body>
     
         <div class="container flexivel horizontal quebra">
-            <div class="item">CFB Cursos 1</div>
-            <div class="item">CFB Cursos 2</div>
-            <div class="item">CFB Cursos 3</div>
-            <div class="item">CFB Cursos 4</div>
-            <div class="item">CFB Cursos 5</div>
-            <div class="item">CFB Cursos 5</div>
-            <div class="item">CFB Cursos 5</div>
-            <div class="item">CFB Cursos 5</div>
+            <div class="item tam1 base0">CFB</div>
+            <div class="item tam1 base0">CFB Cursos</div>
+            <div class="item tam1 base0">CFB Cursos 3 CFB Cursos</div>
+          
             
         </div>
    
