@@ -27,9 +27,10 @@
            /*align-items: baseline ; /*eixo secundário*/
            /*align-items: flex-end;*/
            /*align-items: flex-start;*/
-           align-content: space-between;
+           /*align-content: center;*/
            /*align-content: center; /*eixo secundário*/
            /*align-content não coloca um espaço igual entre os item, diferente de align-items*/
+           align-items: center;
         }
         .flexivel{
              display: flex;
@@ -57,6 +58,10 @@
             color: #fff;
             /*flex-grow: ; o elemento é redimensionado de acordo com o container*/
             /*flex-basis: ; coloca um tamanho base, independente do conteúdo*/
+            /*order: ; o elemento com o valor de order menor será apresentado primeiro*/
+            /*flex-shrink: ; quanto maior o valor maior é a capacidade de redução do tamanho do elemento*/
+            /*flex: ; atalho para configurar felx-grow, flex-shrink e flex-basis juntos*/
+            /*align-self:; alinha o item em específico em relação ao eixo secundário*/
         }
         .tam0{
             flex-grow: 0;
@@ -84,6 +89,41 @@
         .base3{
             flex-basis: 3;
         }
+        /*.ordem0{
+            order: 0;
+        }
+        .ordem1{
+            order: 1;
+        }
+        .ordem2{
+            order: 2;
+        }
+        .ordem3{
+            order: 3;
+        }*/
+        .reduzir1{
+            flex-shrink: 1;
+        }
+        .reduzir0{
+            flex-shrink: 0;
+        }
+        .reduzir2{
+            flex-shrink: 2;
+        }
+        .reduzir3{
+            flex-shrink: 3;
+        }.flex{
+            flex:3 2 200px; 
+        }
+        .inicio{
+            align-self: flex-start;
+        }
+        .meio{
+            align-self: center;
+        }
+        .base{
+            align-self: flex-end;
+        }
         body{
             font-family: arial;
             color: black;
@@ -92,11 +132,11 @@
 </head>
 <body>
     
-        <div class="container flexivel horizontal quebra">
-            <div class="item tam1 base0">CFB</div>
-            <div class="item tam1 base0">CFB Cursos</div>
-            <div class="item tam1 base0">CFB Cursos 3 CFB Cursos</div>
-          
+        <div class="container flexivel horizontal">
+            <div class="item flex inicio">CFB</div>
+            <div class="item flex meio">CFB Cursos</div>
+            <div class="item flex base">CFB Cursos CFB Cursos</div>
+            
             
         </div>
    
