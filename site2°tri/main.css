@@ -44,7 +44,8 @@ nav{
 #principal{
     display: flex;
     flex-wrap: wrap;
-    max-width: 600px;
+    max-width: 1000px;
+    order: 2;
 }
 #noticiaPrincipal{
     min-height: 200px;
@@ -68,11 +69,11 @@ nav{
 #secundaria1{
     display: flex;
     min-height: 120px;
-    min-width: 50%;
+    min-width: 33.333%;
 }
 #imagemsec1{
     min-height: 120px;
-    width: 100px;
+    width: 133px;
 }
 #textosec1{
     min-height: 120px;
@@ -81,15 +82,43 @@ nav{
 #secundaria2{
     display: flex;
     min-height: 120px;
-    min-width: 50%;
+    min-width: 33.333%;
 }
 #imagemsec2{
     min-height: 120px;
-    width: 100px;
+    width: 133px;
 }
 #textosec2{
     min-height: 120px;
     width:200px;
+}
+#corpo{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+#latEsquerda{
+    order: 1;
+    flex-grow: 1;
+    min-width: 120px;
+}
+#latDireita{
+    order: 3;
+    flex-grow: 1;
+    min-width: 120px;
+}
+#secundaria3{
+    display: flex;
+    min-height: 120px;
+    min-width: 33.333;
+}
+#imagemsec3{
+    min-height:120px;
+    width: 133px;
+}
+#textosec3{
+    min-height: 120px;
+    width: 200px;
 }
 
 
