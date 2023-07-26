@@ -3,7 +3,7 @@
 box-sizing: border-box;
 }
 
-div, section,aside{
+div, section,aside,article, footer{
   min-height: 100px;
   border: 1px solid black;
 }
@@ -33,9 +33,10 @@ nav{
     min-width: 50px;
     height: 50px;
     color: blue;
+    border: 0;
 }
 #nome{
-    width: calc(100% - 50px);
+    width: calc(100% - 100px);
     height: 50px;
     display: flex;
     justify-content: center;
@@ -119,6 +120,17 @@ nav{
 #textosec3{
     min-height: 120px;
     width: 200px;
+}
+footer{
+    display: flex;
+    min-height: 100px;
+    order: 4;
+    width: 100%;
+}
+#imgLogo{
+    width: 100px;
+    height: 100px;
+    border: 0;
 }
 
 
