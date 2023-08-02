@@ -6,30 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <link rel="stylesheet" href="main.css">
+    <script>
+        function executaAcao(){
+        window.location = "http://google.com";
+        }
+        </script>
 </head>
 
 <body>
 
     <header>
         <div id="logo"><img src="estilos/logo_site.png" alt="logo" id="imgLogo"></div>
-        <div id="nome"></div>
+        <div id="nome">EM PRIMEIRO</div>
 
         <nav>
-            <div class="itemNav">link A</div>
-            <div class="itemNav">link B</div>
-            <div class="itemNav">link C</div>
-            <div class="itemNav">link D</div>
-            <div class="itemNav">link E</div>
+            <div class="itemNav"><a href=""><button class="botaoNav">link a</button></a></div>
+            <div class="itemNav"><a href=""><button class="botaoNav">link a</button></a></div>
+            <div class="itemNav"><a href=""><button class="botaoNav">link a</button></a></div>
+            <div class="itemNav"><a href=""><button class="botaoNav">link a</button></a></div>
+            <div class="itemNav"><a href=""><button class="botaoNav">link a</button></a> </div>
         </nav>
+        <br>
         <br>
     </header>
 
     <br>
     <div id="corpo">
     <main id="principal">
-        <section id="noticiaPrincipal">
+        <section class="clicavel" id="noticiaPrincipal" onclick="executaAcao()">
             <article id="imagemPrincipal"></article>
             <article id="TextoPrincipal"></article>
+        </section>
+        <section class="clicavel" id="noticiaPrincipal2" onclick="executaAcao()">
+            <article id="imagemPrincipal2"></article>
+            <article id="TextoPrincipal2"></article>
         </section>
         <section id="secundarias">
 
