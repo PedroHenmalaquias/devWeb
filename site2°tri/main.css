@@ -47,6 +47,7 @@ nav{
     background-color: white;
     border: 0;
     font-family: var(--fontePrincipal);
+    cursor: pointer;
 }
 #logo{
     min-width: 50px;
