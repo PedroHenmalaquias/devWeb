@@ -1,47 +1,60 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2? family= Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900 & display=swap');
-*{
-box-sizing: border-box;
+
+* {
+    box-sizing: border-box;
 }
-:root{
+
+:root {
     --fontePrincipal: 'Raleway', sans-serif;
 }
 
-div, section,aside,article, footer{
-  min-height: 100px;
-  border: 1px solid black;
+div,
+section,
+aside,
+article,
+footer {
+    min-height: 100px;
+    border: 1px solid black;
 }
-header{
+
+header {
     display: flex;
     /*min-height: 50px;*/
     align-items: center;
     flex-wrap: wrap;
 }
-nav{
+
+nav {
     min-height: 25px;
     border: 1px solid black;
-      flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
     display: flex;
-    align-items:center;
+    align-items: center;
 
 }
-.itemNav{
+
+.itemNav {
     flex-grow: 1;
     text-align: center;
     height: 25px;
 }
-.clicavel{
+
+.clicavel {
     cursor: pointer;
-    } 
-.clicavel:hover{
+}
+
+.clicavel:hover {
     color: red;
-    }
-.clicavel:active{
+}
+
+.clicavel:active {
     color: blue;
-    }
-.botaoNav{
+}
+
+.botaoNav {
     width: 100%;
     height: 100%;
     background-color: white;
@@ -49,13 +62,15 @@ nav{
     font-family: var(--fontePrincipal);
     cursor: pointer;
 }
-#logo{
+
+#logo {
     min-width: 50px;
     height: 50px;
     color: blue;
     border: 0;
 }
-#nome{
+
+#nome {
     width: calc(100% - 100px);
     /*height: 50px;*/
     display: flex;
@@ -64,109 +79,148 @@ nav{
     font-family: var(--fontePrincipal);
     font-size: 30px;
 }
-#principal{
+
+#principal {
     display: flex;
     flex-wrap: wrap;
     max-width: 1000px;
     order: 2;
 }
-#noticiaPrincipal{
+
+#noticiaPrincipal {
     min-height: 200px;
     width: 50%;
     display: flex;
 }
-#imagemPrincipal{
+
+#imagemPrincipal {
     min-height: 200px;
     min-width: 200px;
 }
-#textoPrincipal{
+
+#textoPrincipal {
     min-height: 200px;
-    min-width: calc(100% - 200px
-    3,260);
+    min-width: calc(100% - 200px 3, 260);
 }
-#noticiaPrincipal2{
+
+#noticiaPrincipal2 {
     min-height: 200px;
     width: 50%;
     display: flex;
 }
-#imagemPrincipal2{
+
+#imagemPrincipal2 {
     min-height: 200px;
     min-width: 200px;
 }
-#textoPrincipal2{
+
+#textoPrincipal2 {
     min-height: 200px;
-    min-width: calc(100% - 200px
-    3,260);
+    min-width: calc(100% - 200px 3, 260);
 }
-#secundarias{
+
+#secundarias {
     min-height: 120px;
     width: 100%;
     display: flex;
 }
-#secundaria1{
+
+#secundaria1 {
     display: flex;
     min-height: 120px;
     min-width: 33.333%;
 }
-#imagemsec1{
+
+#imagemsec1 {
     min-height: 120px;
     width: 133px;
 }
-#textosec1{
+
+#textosec1 {
     min-height: 120px;
     width: 200px;
 }
-#secundaria2{
+
+#secundaria2 {
     display: flex;
     min-height: 120px;
     min-width: 33.333%;
 }
-#imagemsec2{
+
+#imagemsec2 {
     min-height: 120px;
     width: 133px;
 }
-#textosec2{
+
+#textosec2 {
     min-height: 120px;
-    width:200px;
+    width: 200px;
 }
-#corpo{
+
+#corpo {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
 }
-#latEsquerda{
+
+#latEsquerda {
     order: 1;
     flex-grow: 1;
     min-width: 120px;
 }
-#latDireita{
+
+#latDireita {
     order: 3;
     flex-grow: 1;
     min-width: 120px;
 }
-#secundaria3{
+
+#secundaria3 {
     display: flex;
     min-height: 120px;
     min-width: 33.333;
 }
-#imagemsec3{
-    min-height:120px;
+
+#imagemsec3 {
+    min-height: 120px;
     width: 133px;
 }
-#textosec3{
+
+#textosec3 {
     min-height: 120px;
     width: 200px;
 }
-footer{
+
+footer {
     display: flex;
     min-height: 100px;
     order: 4;
     width: 100%;
 }
-#imgLogo{
+
+#imgLogo {
     width: 100px;
     height: 100px;
     border: 0;
 }
 
+#noticiaPrincipal:hover {
+    min-height: 200px;
+    width: 50%;
+    display: flex;
+    animation: gradient_3012 2s ease infinite;
+}
 
+@keyframes gradient_3012 {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
