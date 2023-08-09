@@ -121,7 +121,7 @@ nav {
 #TextoPrincipal  > strong > p{
     margin: 1px;
     font-family: var(--fontePrincipal);
-    font-size: 30px;
+    font-size: 25px;
     border: 0;
 }
 
@@ -156,7 +156,7 @@ nav {
 #TextoPrincipal2 > strong > p{
     margin: 1px;
     font-family: var(--fontePrincipal);
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #secundarias {
@@ -164,38 +164,73 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    border: 0;
 }
 
 #secundaria1 {
     display: flex;
     min-height: 120px;
     min-width: 33.333%;
+    border: 0;
+}
+#secundaria1:hover{
+    transform: scale(1.05);
 }
 
 #imagemsec1 {
     min-height: 120px;
-    width: 133px;
+    width: 200px;
+    border: 0;
 }
 
 #textosec1 {
     min-height: 120px;
     width: 200px;
+    border: 0;
+}
+#textosec1 > p{
+    font-family: var(--fontePrincipal);
+    margin: 1px;
+    font-size: 25px;
+    font-weight: bold;
+}
+#imagemsec1 > img{
+    height: 150px;
+    width: 200px;
+    border-radius: 10px;
 }
 
 #secundaria2 {
     display: flex;
     min-height: 120px;
     min-width: 33.333%;
+    border: 0;
+}
+#secundaria2:hover{
+    transform: scale(1.05);
 }
 
 #imagemsec2 {
     min-height: 120px;
-    width: 133px;
+    width: 200px;
+    border: 0;
+}
+#imagemsec2 > img{
+    height: 150px;
+    width: 200px;
+    border-radius: 10px;
 }
 
 #textosec2 {
     min-height: 120px;
     width: 200px;
+    border: 0;
+}
+#textosec2 > p{
+    font-family: var(--fontePrincipal);
+    margin: 1px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 #corpo {
@@ -220,16 +255,33 @@ nav {
     display: flex;
     min-height: 120px;
     min-width: 33.333;
+    border: 0;
+}
+#secundaria3:hover{
+    transform: scale(1.05);
 }
 
 #imagemsec3 {
     min-height: 120px;
-    width: 133px;
+    width: 200px;
+    border: 0;
+}
+#imagemsec3 > img{
+    height: 150px;
+    width: 200px;
+    border-radius: 10px;
 }
 
 #textosec3 {
     min-height: 120px;
     width: 200px;
+    border: 0;
+}
+#textosec3 > p{
+    font-family: var(--fontePrincipal);
+    margin: 1px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 footer {
