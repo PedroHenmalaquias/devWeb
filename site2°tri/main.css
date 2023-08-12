@@ -23,6 +23,10 @@ header {
     /*min-height: 50px;*/
     align-items: center;
     flex-wrap: wrap;
+    background-color: #6D0201;
+    color: white;
+    font-family: var(--fontePrincipal);
+    border: 0;
 }
 
 nav {
@@ -33,13 +37,17 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
+    background-color: #695D5D;
 
 }
 
 .itemNav {
     flex-grow: 1;
     text-align: center;
+    justify-content: center;
     height: 25px;
+    background-color: #695D5D;
+
 }
 
 .clicavel {
@@ -78,6 +86,7 @@ nav {
     align-items: center;
     font-family: var(--fontePrincipal);
     font-size: 30px;
+    border: 0;
 }
 
 #principal {
@@ -85,6 +94,7 @@ nav {
     flex-wrap: wrap;
     min-width: 1000px;
     order: 2;
+    border: 0;
 }
 
 #noticiaPrincipal {
@@ -93,23 +103,24 @@ nav {
     display: flex;
     margin-left: 124px;
     border: 0;
-   
+
 }
-#noticiaPrincipal:hover{
-     transform: scale(1.05);
+
+#noticiaPrincipal:hover {
+    transform: scale(1.05);
 }
 
 #imagemPrincipal {
     max-height: 200px;
     width: 300px;
-   border: 0;
-   
+    border: 0;
+
 }
 
 #imagemPrincipal>img {
     max-height: 200px;
     width: 300px;
-   border-radius: 10px;
+    border-radius: 10px;
 }
 
 #TextoPrincipal {
@@ -118,7 +129,8 @@ nav {
     border-radius: 10px;
     border: 0;
 }
-#TextoPrincipal  > strong > p{
+
+#TextoPrincipal>strong>p {
     margin: 1px;
     font-family: var(--fontePrincipal);
     font-size: 25px;
@@ -127,25 +139,27 @@ nav {
 
 #noticiaPrincipal2 {
     min-height: 200px;
-    width:  calc(50% - 124px);
+    width: calc(50% - 124px);
     display: flex;
     margin-right: 124px;
     border: 0;
 }
-#noticiaPrincipal2:hover{
+
+#noticiaPrincipal2:hover {
     transform: scale(1.05);
 }
 
 #imagemPrincipal2 {
     max-height: 200px;
     width: 300px;
-   border: 0;
-   
+    border: 0;
+
 }
-#imagemPrincipal2 > img{
+
+#imagemPrincipal2>img {
     max-height: 200px;
     width: 300px;
-   border-radius: 10px;
+    border-radius: 10px;
 }
 
 #TextoPrincipal2 {
@@ -153,7 +167,8 @@ nav {
     max-width: 370px;
     border: 0;
 }
-#TextoPrincipal2 > strong > p{
+
+#TextoPrincipal2>strong>p {
     margin: 1px;
     font-family: var(--fontePrincipal);
     font-size: 25px;
@@ -163,7 +178,7 @@ nav {
     min-height: 120px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     border: 0;
 }
 
@@ -172,8 +187,11 @@ nav {
     min-height: 120px;
     min-width: 33.333%;
     border: 0;
+    margin-right: 5px;
+    margin-left: 40px;
 }
-#secundaria1:hover{
+
+#secundaria1:hover {
     transform: scale(1.05);
 }
 
@@ -188,13 +206,15 @@ nav {
     width: 200px;
     border: 0;
 }
-#textosec1 > p{
+
+#textosec1>p {
     font-family: var(--fontePrincipal);
     margin: 1px;
     font-size: 25px;
     font-weight: bold;
 }
-#imagemsec1 > img{
+
+#imagemsec1>img {
     height: 150px;
     width: 200px;
     border-radius: 10px;
@@ -205,8 +225,10 @@ nav {
     min-height: 120px;
     min-width: 33.333%;
     border: 0;
+    margin-right: 5px;
 }
-#secundaria2:hover{
+
+#secundaria2:hover {
     transform: scale(1.05);
 }
 
@@ -215,7 +237,8 @@ nav {
     width: 200px;
     border: 0;
 }
-#imagemsec2 > img{
+
+#imagemsec2>img {
     height: 150px;
     width: 200px;
     border-radius: 10px;
@@ -226,7 +249,8 @@ nav {
     width: 200px;
     border: 0;
 }
-#textosec2 > p{
+
+#textosec2>p {
     font-family: var(--fontePrincipal);
     margin: 1px;
     font-size: 25px;
@@ -237,7 +261,10 @@ nav {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    border: 0;
+   
 }
+
 
 #latEsquerda {
     order: 1;
@@ -256,8 +283,10 @@ nav {
     min-height: 120px;
     min-width: 33.333;
     border: 0;
+    margin-right: 5px;
 }
-#secundaria3:hover{
+
+#secundaria3:hover {
     transform: scale(1.05);
 }
 
@@ -266,7 +295,8 @@ nav {
     width: 200px;
     border: 0;
 }
-#imagemsec3 > img{
+
+#imagemsec3>img {
     height: 150px;
     width: 200px;
     border-radius: 10px;
@@ -277,7 +307,8 @@ nav {
     width: 200px;
     border: 0;
 }
-#textosec3 > p{
+
+#textosec3>p {
     font-family: var(--fontePrincipal);
     margin: 1px;
     font-size: 25px;
