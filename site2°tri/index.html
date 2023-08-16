@@ -22,6 +22,15 @@
         function abriNotc5() {
             window.location = "http://google.com";
         };
+        function openNav() {
+  document.getElementById("myNav").style.height = "20%";
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+  document.getElementById("myNav").style.width = "0%";
+}
     </script>
 </head>
 
@@ -32,11 +41,21 @@
         <div id="nome">CRONOMETRANDO</div>
 
         <nav>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="#">About</a>
+                  <a href="#">Services</a>
+                  <a href="#">Clients</a>
+                  <a href="#">Contact</a>
+                </div>
+              </div>
+              <span id="botaoNav" onclick="openNav()">&#9776; Menu</span>
+            <!-- <div class="itemNav"><a href=""><button class="botaoNav">link a</button></a></div>
             <div class="itemNav"><a href=""><button class="botaoNav">link a</button></a></div>
             <div class="itemNav"><a href=""><button class="botaoNav">link a</button></a></div>
             <div class="itemNav"><a href=""><button class="botaoNav">link a</button></a></div>
-            <div class="itemNav"><a href=""><button class="botaoNav">link a</button></a></div>
-            <div class="itemNav"><a href=""><button class="botaoNav">link a</button></a> </div>
+            <div class="itemNav"><a href=""><button class="botaoNav">link a</button></a> </div> -->
         </nav>
         <br>
         <br>
@@ -44,38 +63,57 @@
 
     <br>
     <div id="corpo">
+        <div id="textoSobrePrincipal">
+            <h1>Notícias principais</h1>
+        </div>
         <main id="principal">
             <section class="clicavel" id="noticiaPrincipal" onclick="abriNotc1()">
                 <article id="imagemPrincipal"><img src="estilos/Imagem_noticia1.webp" alt=""></article>
-                <article id="TextoPrincipal"><strong><p>Max Verstappen está a uma corrida de bater o recorde de Sebastian Vettel!</p></strong></article>
+                <article id="TextoPrincipal"><strong>
+                        <p>Max Verstappen está a uma corrida de bater o recorde de Sebastian Vettel!</p>
+                    </strong></article>
             </section>
             <section class="clicavel" id="noticiaPrincipal2" onclick="abriNotc2()">
                 <article id="imagemPrincipal2"><img src="estilos/iamgemnoticia2.jpg" alt=""></article>
-                <article id="TextoPrincipal2"><strong><p>Sérgio Perez vai para a pausa de temporada 125 pontos atrás de seu rival no campeonato de pilotos!</p></strong></article>
+                <article id="TextoPrincipal2"><strong>
+                        <p>Sérgio Perez vai para a pausa de temporada 125 pontos atrás de se u rival no campeonato de
+                            pilotos!</p>
+                    </strong></article>
             </section>
+            <div id="textoSobreSecundaria">
+                <p>Podem te interessar</p>
+            </div>
             <section id="secundarias">
 
                 <article class="clicavel" id="secundaria1" onclick="abriNotc3()">
                     <article id="imagemsec1">
                         <img src="estilos/imagem_notícia_secundária1.jpg" alt="">
                     </article>
-                    <article id="textosec1"><p>Ferrari trará novas atualizações no próximo GP</p></article>
+                    <article id="textosec1">
+                        <p>Ferrari trará novas atualizações no próximo GP</p>
+                    </article>
                 </article>
                 <article class="clicavel" id="secundaria2" onclick="abriNotc4()">
                     <article id="imagemsec2"><img src="estilos/imagem_noticia_secundaria2.jpg" alt=""></article>
-                    <article id="textosec2"><p>Briga no meio da tabela muito equilibrada</p></article>
+                    <article id="textosec2">
+                        <p>Briga no meio da tabela muito equilibrada</p>
+                    </article>
                 </article>
-                <article id="secundaria3"  onclick="abriNotc5()" class="clicavel">
+                <article id="secundaria3" onclick="abriNotc5()" class="clicavel">
                     <article id="imagemsec3"><img src="estilos/imagem_noticia_secundaria3.jpg" alt=""></article>
-                    <article id="textosec3"><p>Mercedes em pé de igualdade com a Ferrari!?</p></article>
+                    <article id="textosec3">
+                        <p>Mercedes em pé de igualdade com a Ferrari!?</p>
+                    </article>
                 </article>
             </section>
         </main>
         <!-- <aside id="latEsquerda"></aside>
         <aside id="latDireita"></aside> -->
-        <footer></footer>
+        <footer id="rodape"></footer>
     </div>
+<script>
 
+</script>
 </body>
 
 </html>
