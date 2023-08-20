@@ -448,16 +448,15 @@ footer {
     cursor:pointer;
     justify-content: flex-start;
   }
+ /*páginas de conteúdo*/
 
-
-  /*A partir daqui css para a página de ultima corrida*/
-
- #conteudoUltimaCorrida{
+ .conteudoPaginas{
     display: flex;
     margin: auto;
     max-width: 60%;
     margin-top: 50px;
     flex-direction: column;
+    border: 0;
  }
  .imagemConteudo{
     width: 80%;
@@ -470,3 +469,55 @@ footer {
     width: 100%;
     height: 320px;
  }
+ .conteudoPaginas > p{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 25px;
+ }
+ .anuncio{
+    max-width: 15%;
+    margin: auto;
+    border: 0;
+ }
+ .anuncio > a > img{
+    width: 100%;
+    height: 400px;
+ }
+ @keyframes animaSeta {
+    from{
+        margin-left: 0%;
+    }
+    to{
+        margin-left: 20%;
+    }
+ }
+#animacaoSeta{
+   max-width: 30%;
+   align-items: flex-start; 
+   animation-name: animaSeta;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   border: 0;
+}
+#animacaoSeta > img{
+    width: 75%;
+    height: 150px;
+}
+.animacaoEarquivo{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: 100%;
+    border: 0;
+}
+.siteF1{
+    max-width: 25%;
+    height: 150px;
+    margin-right: 0;
+    justify-content: end;
+    border: 0;
+}
+.siteF1 > a > img{
+    width: 100%;
+    height: 100%;
+}

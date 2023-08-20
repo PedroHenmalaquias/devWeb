@@ -1,48 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regulamento</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" href="estilos/logo_site.png" type="image/x-icon">
-    <script>
-        function openNav() {
-  document.getElementById("myNav").style.height = "20%";
-  document.getElementById("myNav").style.width = "100%";
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regulamento</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="shortcut icon" href="estilos/logo_site.png" type="image/x-icon">
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "20%";
+      document.getElementById("myNav").style.width = "100%";
+    }
 
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-  document.getElementById("myNav").style.width = "0%";
-}
-    </script>
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+      document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
 </head>
-<body>
-    <header>
-        <div id="logo"><img src="estilos/logo_site.png" alt="logo" id="imgLogo"></div>
-        <div id="nome">CRONOMETRANDO</div>
 
-        <nav>
-            <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                  <a href="index.html">Principal</a>
-                  <a href="ultimaCorrida.html">Ultima Corrida</a>
-                  <a href="#">Equipes</a>
-                  <a href="#">Sobre</a>
-                </div>
-              </div>
-              <span id="botaoNav" onclick="openNav()">&#9776; Menu</span>
-            <!-- <div class="itemNav"><a href=""><button class="botaoNav">link a</button></a></div>
-            <div class="itemNav"><a href=""><button class="botaoNav">link a</button></a></div>
-            <div class="itemNav"><a href=""><button class="botaoNav">link a</button></a></div>
-            <div class="itemNav"><a href=""><button class="botaoNav">link a</button></a></div>
-            <div class="itemNav"><a href=""><button class="botaoNav">link a</button></a> </div> -->
-        </nav>
-        <br>
-        <br>
-    </header>
-    <div class="corpo"></div>
+<body>
+  <header>
+    <div id="logo"><img src="estilos/logo_site.png" alt="logo" id="imgLogo"></div>
+    <div id="nome">CRONOMETRANDO</div>
+
+    <nav>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="index.html">Principal</a>
+          <a href="ultimaCorrida.html">Ultima Corrida</a>
+          <a href="equipes.html">Equipes</a>
+          <a href="regulamento.html">Regulamento</a>
+        </div>
+      </div>
+      <span id="botaoNav" onclick="openNav()">&#9776; Menu</span>
+
+    </nav>
+    <br>
+    <br>
+  </header>
+  <div class="corpo">
+    <aside class="anuncio"><a href="https://https://kfcbrasil.com.br/"><img src="estilos/anuncio3.jpg" alt=""></a></aside>
+    <div class="conteudoPaginas">
+      <h1 style="text-align: center;">Principais notícias das equipes</h1>
+      <p>Abaixo estão os links para as principais notícias das equipes de Fórmula 1 da semana:</p>
+      <h3 style="text-align: center;">Ferrari</h3>
+      <div class="imagemConteudo"><img src="estilos/imagemNoticiasFerrari.jpg" alt="" style="height: 350px;"></div>
+      <p>A equipe Ferrari trará um bom pacote de mudanças aerodinamicas para a próxima semana. clique nos links abaixo
+        para saber mais:</p>
+      <ul>
+        <li><a href="#" style="color: black;">
+            <p>Mudanças no sidepod</p>
+          </a></li>
+        <li><a href="#" style="color: black;">
+            <p>Alterações no assoalho</p>
+          </a></li>
+        <li><a href="#" style="color: black;">
+            <p>Atualizações de confiabilidade do motor</p>
+          </a></li>
+      </ul>
+      <h3 style="text-align: center;">Mercedes</h3>
+      <div class="imagemConteudo"><img src="estilos/noticaMercedes1.jpg" alt=""></div>
+      <p>A Mercedes terá duas atualizações no próximo fim de semana:</p>
+      <ul>
+        <li><a href="#" style="color: black;">
+            <p>Grandes mudanças no sidepod</p>
+          </a></li>
+        <li><a href="#" style="color: black;">
+            <p>Dutos de freio</p>
+          </a></li>
+      </ul>
+<h3
+ style="text-align: center;">Red Bull</h3>
+ <div class="imagemConteudo"><img src="estilos/noticiaRedBull.jpg" alt="" style="height: 350px;"></div>
+ <p>A equipe Red Bull trará apenas uma atualização para o próximo GP:</p>
+ <ul>
+  <li><a href="#" style="color: black;">
+      <p>Atualização da asa traseira</p>
+    </a></li></ul>
+    </div>
+    <aside class="anuncio"><a href="https://https://kfcbrasil.com.br/"><img src="estilos/anuncio3.jpg" alt=""></a></aside>
+    <footer id="rodape"><p style="justify-content: flex-start; align-items: flex-end;">Feito por: <a href="https://github.com/PedroHenmalaquias" style="color: white;">https://github.com/PedroHenmalaquias</a></p></footer>
+  </div>
 </body>
+
 </html>
