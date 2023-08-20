@@ -13,6 +13,9 @@
     --cor4: #C4B6B3;
     --cor5: #1D1916;
 }
+h1, h2, h3, h4, h5, h6, p{
+    font-family: var(--fontePrincipal);
+}
 
 div,
 section,
@@ -449,4 +452,21 @@ footer {
 
   /*A partir daqui css para a página de ultima corrida*/
 
- 
+ #conteudoUltimaCorrida{
+    display: flex;
+    margin: auto;
+    max-width: 60%;
+    margin-top: 50px;
+    flex-direction: column;
+ }
+ .imagemConteudo{
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 0;
+ }
+ .imagemConteudo > img{
+    width: 100%;
+    height: 320px;
+ }
