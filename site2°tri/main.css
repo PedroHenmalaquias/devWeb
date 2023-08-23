@@ -577,7 +577,6 @@ footer {
         margin-top: 10px;
         /*justify-content: space-around;*/
     }
-
     .overlay>.closebtn {
         justify-content: flex-start;
         /*margin: auto;*/
@@ -585,7 +584,7 @@ footer {
         order: 1;
         margin-right: 0px;
         position: absolute;
-        left: 5px;
+        left: 10px;
         width: 50px;
     }
 
