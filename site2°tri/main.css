@@ -285,20 +285,6 @@ nav {
     border: 0;
 
 }
-
-
-#latEsquerda {
-    order: 1;
-    flex-grow: 1;
-    min-width: 10px;
-}
-
-#latDireita {
-    order: 3;
-    flex-grow: 1;
-    min-width: 10px;
-}
-
 #secundaria3 {
     display: flex;
     min-height: 120px;
